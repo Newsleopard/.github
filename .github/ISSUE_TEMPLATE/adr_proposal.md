@@ -10,6 +10,9 @@ assignees: []
 
 **ADR 類型**: [ ] Platform ADR (影響多個微服務)  [ ] Service ADR (單一儲存庫)
 
+**如果是 Platform ADR，請指定主題名稱**: _______________
+(例如：customer-profile, cs-ai-agent, mcp-api-standards)
+
 **如果是 Service ADR，請指定 GitHub 儲存庫名稱**: _______________
 (例如：nlm-contacts, backend-v2, java-library-commons, nlInc-vpnMgmtTools)
 
@@ -46,9 +49,11 @@ assignees: []
 <!-- 相關 Issue / PR / 文件 -->
 
 ---
+
 提交前自我檢查：
 
 - [ ] 問題背景描述清楚
 - [ ] 已確認 ADR 類型 (Platform vs Service)
+- [ ] 如果是 Platform ADR，已指定主題名稱
 - [ ] 如果是 Service ADR，已指定 GitHub 儲存庫名稱
 - [ ] 已添加適當標籤：`platform` 或 `service:{repository-name}`

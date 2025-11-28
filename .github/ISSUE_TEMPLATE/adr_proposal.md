@@ -13,81 +13,42 @@ assignees: []
 **如果是 Service ADR，請指定 GitHub 儲存庫名稱**: _______________
 (例如：nlm-contacts, backend-v2, java-library-commons, nlInc-vpnMgmtTools)
 
-## 🔍 背景 (Context)
+## 🔍 問題背景 (Problem Context)
 
 為什麼現在需要做這個決策？
 
-描述驱動這個決策的背景、問題或需求：
+描述驅動這個決策的背景、問題或需求：
 
 - 觸發事件或問題
 - 業務或技術需求
 - 現有方案的限制
 
-## 💡 建議方案 (Proposed Decision)
+## 💭 初步想法或選項 (Initial Thoughts / Options)
 
-我們建議採用什麼解決方案？
+<!-- (選填) 如果已有想法，請列出可能的選項或方向。不需要完整的分析。 -->
 
-明確描述建議的方案，要具體可操作：
+- 選項 1: ...
+- 選項 2: ...
 
-- 具體的技術選擇
-- 實施的關鍵要點
-- 重要的設計原則
+## 👥 建議參與者 (Stakeholders)
 
-## ⚖️ 替代方案 (Alternatives Considered)
-
-我們還考慮了哪些選項？為什麼沒有選擇？
-
-- **選項 A**: 簡述 + 為什麼沒選
-- **選項 B**: 簡述 + 為什麼沒選
-
-## 💥 影響 (Consequences)
-
-這個決策會帶來什麼影響？
-
-### 正面影響
-
-- 解決了什麼問題
-- 帶來什麼好處
-- 提升了什麼能力
-
-### 負面影響/風險
-
-- 需要承擔什麼代價
-- 可能帶來的風險
-- 需要額外的工作
-
-### 後續行動
-
-- [ ] 需要完成的具體任務
-- [ ] 需要更新的文檔或配置
-- [ ] 需要通知的相關團隊
-
-## 🔗 關聯 (Links)
-
-相關 Issue / PR：
-
-## 👥 需要參與的角色 (Stakeholders)
+<!-- 誰應該參與這個討論？ -->
 
 **Platform ADR**: 所有團隊成員
-
-**Service ADR**: Backend / Frontend / DevOps / Data / Security / Product（刪除不適用）
-
-**相關儲存庫團隊**: _______________
+**Service ADR**: 相關團隊成員
 
 ## ⏱ 時間敏感度 (Time Criticality)
 
-是否有截止時間 / 對 Roadmap 影響？
+<!-- 是否有截止時間 / 對 Roadmap 影響？ -->
 
-## 🚫 不在範圍 (Out of Scope)
+## 🔗 參考資料 (References)
 
-避免討論發散。
+<!-- 相關 Issue / PR / 文件 -->
 
 ---
 提交前自我檢查：
 
-- [ ] 背景與觸發清楚
-- [ ] 有 2+ 合理選項
-- [ ] 已列出需參與角色
+- [ ] 問題背景描述清楚
 - [ ] 已確認 ADR 類型 (Platform vs Service)
 - [ ] 如果是 Service ADR，已指定 GitHub 儲存庫名稱
 - [ ] 已添加適當標籤：`platform` 或 `service:{repository-name}`

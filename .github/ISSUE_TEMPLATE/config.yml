@@ -1,0 +1,10 @@
+```yaml
+blank_issues_enabled: false
+# contact_links:
+#   - name: Security Report / 資安通報
+#     url: https://example.com/security
+#     about: 若發現漏洞或資安問題，請透過此專用通道回報（勿公開建立 Issue）。
+#   - name: Architecture Discussion / 架構討論論壇
+#     url: https://example.com/architecture-forum
+#     about: 跨領域架構探索性討論可先在論壇收斂後再產 ADR。
+```

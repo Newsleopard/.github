@@ -1,14 +1,18 @@
-Tier: 1 — <一句話：為什麼是這個 tier（0=docs/註解/非邏輯 config 或 ≤30 LOC 無控制流；1=一般改動；2=auth/secrets、DB schema/migration、破壞性 infra、跨服務 contract）>
+Tier: <0|1|2> — <一句話理由>
 Pre-PR self-review: not run (no-review-tool); codex-verify: skipped (no trigger)
 Non-blocking budget: round 1
 
 <!--
-⚠️ 上面三行是宣告行 —— 機器（poller / pr-converge）與 reviewer 都會讀，請保留在 PR body 最上方並照實填寫：
-- `Tier:` 必須錨在行首，格式 `Tier: 0|1|2 — 理由`；拿不準往上判。
-- `Pre-PR self-review:` 為封閉詞彙（正典：nlm-system-overview docs/prd/2026-08-08-pre-pr-tiered-self-review-prd.md §3.3）。
-  預填值是「機器上沒有自審工具」的誠實預設；有跑過就照實改，例如 `@critic ×1; codex-verify: skipped (no trigger)`。
-- `Non-blocking budget:` 預設 `round 1` ＝ 每位 reviewer 的非阻塞意見在本 PR 修一輪、之後開 follow-up issue。
-  作者要每輪都收可改成 `all rounds — <理由>`。⚠️ 本說明區塊必須留在宣告行「之後」（parser 取第一個命中）。
+⚠️ 上面三行是宣告行，請保留在 PR body 最上方並照實填寫：
+- `Tier:` 請把 <0|1|2> 換成一個數字、錨在行首（機器會讀這行；留著 placeholder 視同未宣告）。
+  0＝docs/註解/非邏輯 config 或 ≤30 LOC 無控制流；1＝一般改動；2＝auth/secrets、DB schema/migration、
+  破壞性 infra、跨服務 contract。拿不準往上判。宣告 Tier 0 時請把下面兩行刪掉（Tier 0 沒有宣告行）。
+- `Pre-PR self-review:`（給 reviewer 讀）是封閉詞彙，見團隊規則〈宣告行〉一節。預填值只適用
+  「機器上沒有自審工具」的情況 —— 有工具請先跑完自審再開 PR、照實改寫
+  （例：`@critic ×1; codex-verify: skipped (no trigger)`）；宣告 Tier 2 時這行也要跟著換值。
+- `Non-blocking budget:`（機器會讀）預設 `round 1` ＝ 每位 reviewer 的非阻塞意見在本 PR 修一輪、
+  之後開 follow-up issue 追。作者要每輪都收可改成 `all rounds — <理由>`。
+  本說明區塊必須留在宣告行「之後」（parser 取第一個命中）。
 -->
 
 ## 🧩 變更類型 (Change Type)
